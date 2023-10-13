@@ -1,8 +1,9 @@
 import "./globals.scss";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+// font setting
+import { Golos_Text } from "next/font/google";
+const font = Golos_Text({ subsets: ["cyrillic"] });
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
