@@ -4,7 +4,7 @@
 
 **Description:** Simple portfolio for search work
 
-**Stack:** TypeScript, React, Next, Sass
+**Stack:** TypeScript, React, Next, Scss
 
 **Linters and Formatters:** Eslint, Prettier
 
