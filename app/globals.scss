@@ -1,11 +1,16 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  /* Убрать выделение у всего текста на сайте */
+  -youbkit-touch-callout: none; /* Сафари для iOS */
+  -youbkit-user-select: none; /* Chrome 6.0+, Safari 3.1+, Edge и Opera 15+ */
+  -moz-user-select: none; /* Fire Fox */
+  -ms-user-select: none; /* IE 10+ и Edge */
+  user-select: none; /* Версия без префикса, в настоящее время поддерживается Chrome и Opera */
 }
