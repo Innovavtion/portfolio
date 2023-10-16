@@ -2,13 +2,22 @@
 
 import styles from "./Navbar.module.scss";
 
+import { useContext } from "react";
+
+import {
+  ThemeContext,
+  ThemeContextType,
+} from "@/components/providers/theme/ThemeProvider";
+
 import ButtonNavbar from "./Button/ButtonNavbar";
 import { RiMoonLine, RiSunLine, RiHome5Line } from "react-icons/ri";
 
-import { useState } from "react";
-
 export default function Navbar() {
-  const [theme, setTheme] = useState<boolean>(false);
+  const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
+
+  const updateTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
     <div className={styles.container}>
@@ -22,8 +31,8 @@ export default function Navbar() {
           <a>About</a>
           <a>Project</a>
           <a>Contact</a>
-          <ButtonNavbar onClick={() => setTheme(!theme)}>
-            {theme != true ? <RiSunLine /> : <RiMoonLine />}
+          <ButtonNavbar onClick={() => updateTheme()}>
+            {theme === "light" ? <RiSunLine /> : <RiMoonLine />}
           </ButtonNavbar>
         </div>
       </div>
