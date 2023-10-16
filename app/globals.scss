@@ -18,10 +18,6 @@ body {
   color: var(--text-color);
 }
 
-:root {
-  color-scheme: light dark;
-}
-
 :root[data-theme="light"] {
   --background-color: #f9fafb;
   --background-div: #d9d9d9;

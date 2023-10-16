@@ -1,6 +1,6 @@
 import "./globals.scss";
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/components/providers/theme/ThemeProvider";
+import NextThemeProvider from "@/components/providers/theme/NextThemeProvider";
 import Navbar from "@/components/Navbar/Navbar";
 
 // font setting
@@ -20,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <ThemeProvider>
+        <NextThemeProvider>
           <Navbar />
           {children}
-        </ThemeProvider>
+        </NextThemeProvider>
       </body>
     </html>
   );

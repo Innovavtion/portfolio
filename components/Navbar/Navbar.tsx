@@ -2,22 +2,27 @@
 
 import styles from "./Navbar.module.scss";
 
-import { useContext } from "react";
-
-import {
-  ThemeContext,
-  ThemeContextType,
-} from "@/components/providers/theme/ThemeProvider";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 
 import ButtonNavbar from "./Button/ButtonNavbar";
 import { RiMoonLine, RiSunLine, RiHome5Line } from "react-icons/ri";
 
 export default function Navbar() {
-  const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   const updateTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "dark" ? "light" : "dark");
   };
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className={styles.container}>
@@ -32,7 +37,7 @@ export default function Navbar() {
           <a>Project</a>
           <a>Contact</a>
           <ButtonNavbar onClick={() => updateTheme()}>
-            {theme === "light" ? <RiSunLine /> : <RiMoonLine />}
+            {theme === "dark" ? <RiMoonLine /> : <RiSunLine />}
           </ButtonNavbar>
         </div>
       </div>
