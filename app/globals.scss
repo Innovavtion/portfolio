@@ -14,8 +14,25 @@ body {
   -ms-user-select: none; /* IE 10+ и Edge */
   user-select: none; /* Версия без префикса, в настоящее время поддерживается Chrome и Opera */
 
+  /* Убрать синие выделение */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+
   background-color: var(--background-color);
   color: var(--text-color);
+
+  /* Убрать hover mobile */
+  @media (hover: hover) {
+    button:hover {
+      background-color: var(--border-color);
+    }
+  }
+
+  @media (hover: none) {
+    button:active {
+      background-color: var(--border-color);
+    }
+  }
 }
 
 :root[data-theme="light"] {
@@ -23,7 +40,7 @@ body {
   --background-div: #d9d9d9;
   --icon-color: #1c1b1f;
   --text-color: #1c1b1f;
-  --border-color: rgba(0, 0, 0, 0.1);
+  --border-color: rgba(0, 0, 0, 0.15);
 }
 
 :root[data-theme="dark"] {
@@ -31,5 +48,5 @@ body {
   --background-div: #333235;
   --icon-color: #ffffff;
   --text-color: #d9d9d9;
-  --border-color: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 255, 255, 0.15);
 }

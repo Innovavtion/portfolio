@@ -32,10 +32,12 @@ export default function Navbar() {
             <RiHome5Line className={styles.logo} />
           </ButtonNavbar>
         </div>
-        <div className={styles.navbarRight}>
+        <div className={styles.navbarCenter}>
           <a>About</a>
           <a>Project</a>
-          <a>Contact</a>
+          <a>Stack</a>
+        </div>
+        <div className={styles.navbarRight}>
           <ButtonNavbar onClick={() => updateTheme()}>
             {theme === "dark" ? <RiMoonLine /> : <RiSunLine />}
           </ButtonNavbar>
