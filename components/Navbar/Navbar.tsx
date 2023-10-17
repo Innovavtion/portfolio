@@ -34,7 +34,7 @@ export default function Navbar() {
         </div>
         <div className={styles.navbarCenter}>
           <a>About</a>
-          <a>Project</a>
+          <a>Portfolio</a>
           <a>Stack</a>
         </div>
         <div className={styles.navbarRight}>

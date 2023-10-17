@@ -3,47 +3,71 @@
 import { Button } from "../Base/Button/Button";
 import styles from "./About.module.scss";
 import ReactTyped from "react-typed";
-import { SiTypescript, SiReact, SiTailwindcss } from "react-icons/si";
+import {
+  SiTypescript,
+  SiReact,
+  SiTailwindcss,
+  SiGithub,
+  SiTelegram,
+  SiGmail,
+} from "react-icons/si";
 import { IoLogoSass, IoIosMore } from "react-icons/io";
+import Image from "next/image";
+import LaptopSvg from "@/public/Laptop.svg";
 
 export default function About() {
   return (
     <div className={styles.About}>
-      <div className={styles.container}>
-        <p className={styles.textFIO}>Nikita Pozhidaev</p>
-        <p className={styles.textTypes}>
-          <ReactTyped
-            strings={["Web Developer", "React Developer"]}
-            typeSpeed={150}
-            loop
-            backSpeed={35}
-            cursorChar="❚"
-            showCursor={true}
-          />
-        </p>
-        <div className={styles.stack}>
-          <Button>
-            <SiTypescript class={styles.TypeScript} />
-          </Button>
-          <Button>
-            <SiReact class={styles.React} />
-          </Button>
-          <Button>
-            <IoLogoSass class={styles.Sass} />
-          </Button>
-          <Button>
-            <SiTailwindcss class={styles.Tailwind} />
-          </Button>
-          <Button>
-            <IoIosMore />
-          </Button>
+      <div className={styles.Container}>
+        <div className={styles.ContainerLaptop}>
+          <div className={styles.LaptopContent}>
+            <div className={styles.Content}>
+              <p className={styles.TextFIO}>Nikita Pozhidaev</p>
+              <p className={styles.TextTypes}>
+                <ReactTyped
+                  strings={["Web Developer", "React Developer"]}
+                  typeSpeed={150}
+                  loop
+                  backSpeed={35}
+                  cursorChar="❚"
+                  showCursor={true}
+                />
+              </p>
+              <div className={styles.Stack}>
+                <Button>
+                  <SiTypescript className={styles.TypeScript} />
+                </Button>
+                <Button>
+                  <SiReact className={styles.React} />
+                </Button>
+                <Button>
+                  <IoLogoSass className={styles.Sass} />
+                </Button>
+                <Button>
+                  <SiTailwindcss className={styles.Tailwind} />
+                </Button>
+                <Button>
+                  <IoIosMore />
+                </Button>
+              </div>
+              <div className={styles.Contact}>
+                <Button>
+                  <SiGmail />
+                </Button>
+                <Button>
+                  <SiGithub />
+                </Button>
+                <Button>
+                  <SiTelegram />
+                </Button>
+              </div>
+              <div className={styles.DownloadResume}>
+                <Button>Download Resume</Button>
+              </div>
+            </div>
+          </div>
+          <Image src={LaptopSvg} alt="Laptop" className={styles.Laptop} />
         </div>
-        {/*
-        <div className={styles.Contact}>
-          <Button>Download Resume</Button>
-          <Button>Download Resume</Button>
-        </div>
-        */}
       </div>
     </div>
   );
