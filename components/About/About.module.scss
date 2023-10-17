@@ -1,0 +1,103 @@
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin-top: 157px;
+}
+
+.textTypes {
+  font-size: 35px;
+  font-weight: 700;
+  color: chocolate;
+  font-family: sans-serif;
+}
+
+.textFIO {
+  width: 100%;
+  font-size: 57px;
+  font-weight: 900;
+  font-family: sans-serif;
+  font-family: cursive;
+}
+
+.stack {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 27px;
+
+  button {
+    background: none;
+    font-size: 21.5px;
+    border-radius: 7.5px;
+  }
+
+  :not(:last-child) {
+    margin-right: 7px;
+  }
+
+  :nth-child(n) {
+    word-wrap: 35%;
+  }
+
+  .TypeScript {
+    color: rgba(59, 130, 246, 1);
+  }
+
+  .React {
+    color: rgba(59, 130, 246, 0.75);
+  }
+
+  .Sass {
+    color: #c69;
+  }
+
+  .Tailwind {
+    color: rgb(56, 189, 248);
+  }
+}
+
+.Contact {
+  margin-top: 27px;
+  display: flex;
+
+  button {
+    font-weight: 900;
+    font-family: cursive;
+    background: none;
+    font-size: 21.5px;
+    border-radius: 7.5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container,
+  .textFIO,
+  .textTypes,
+  .stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .textFIO,
+  .textTypes {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+
+  .stack {
+    row-gap: 10px;
+  }
+}

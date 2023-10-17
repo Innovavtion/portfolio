@@ -2,7 +2,6 @@ import "./globals.scss";
 import type { Metadata } from "next";
 import NextThemeProvider from "@/components/providers/theme/NextThemeProvider";
 import Navbar from "@/components/Navbar/Navbar";
-
 // font setting
 import { Golos_Text } from "next/font/google";
 const font = Golos_Text({ subsets: ["cyrillic"] });
@@ -12,11 +11,11 @@ export const metadata: Metadata = {
   description: "Portfolio -> Home",
 };
 
-export default function RootLayout({
-  children,
-}: {
+type Props = {
   children: React.ReactNode;
-}) {
+};
+
+export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body className={font.className}>
