@@ -1,45 +1,50 @@
 .About {
-  z-index: 1;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+
+  z-index: 1;
 }
 
 .Container {
-  background: none;
   width: 100%;
   max-width: 1024px;
+
   margin-top: 75px;
 }
 
 .ContainerLaptop {
+  position: relative;
   width: 100%;
 }
 
 .LaptopContent {
   position: absolute;
-  width: 55%;
-  height: 45%;
-  overflow: auto;
-  margin: auto;
-  top: -50px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
+  // Shorthand for left, bottom, right, top
+  inset: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  z-index: 2;
 }
 
 .Content {
   width: 100%;
+  margin-bottom: 130px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .TextFIO {
-  background: none;
   width: 100%;
+
   font-size: 57px;
   font-weight: 900;
   font-family: sans-serif;
@@ -47,11 +52,12 @@
 }
 
 .TextTypes {
-  background: none;
+  width: 100%;
+
   font-size: 35px;
   font-weight: 700;
-  color: chocolate;
   font-family: sans-serif;
+  color: chocolate;
 }
 
 .TextFIO,
@@ -63,31 +69,34 @@
 }
 
 .Stack {
-  background: none;
   width: 100%;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   margin-top: 35px;
 
   button {
     background: none;
+
     font-size: 21.5px;
+    color: #d9d9d9;
+
     border-radius: 7.5px;
     border-color: rgba(255, 255, 255, 0.15);
-    color: #d9d9d9;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.03);
+    }
   }
 
   :not(:last-child) {
     margin-right: 7px;
   }
 
-  :nth-child(n) {
-    word-wrap: 35%;
-  }
-
   .TypeScript {
-    color: rgba(59, 130, 246, 1);
+    color: rgba(0, 122, 204, 1);
   }
 
   .React {
@@ -104,16 +113,34 @@
 }
 
 .Contact {
-  margin-top: 27px;
   display: flex;
+  margin-top: 27px;
 
   button {
+    background: none;
+
+    font-size: 21.5px;
     font-weight: 900;
     font-family: cursive;
-    background: none;
-    font-size: 21.5px;
+    color: #d9d9d9;
+
     border-radius: 7.5px;
     border-color: rgba(255, 255, 255, 0.15);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+  }
+
+  .GMail {
+    color: #d9d9d9;
+  }
+
+  .GitHub {
+    color: #d9d9d9;
+  }
+
+  .Telegram {
     color: #d9d9d9;
   }
 }
@@ -145,14 +172,20 @@
   button {
     margin-top: 35px;
     margin-bottom: 14px;
+
+    font-size: 21.5px;
     font-weight: 900;
     font-family: sans-serif;
     background: none;
-    font-size: 21.5px;
+
     border-radius: 7.5px;
     border-color: rgba(255, 255, 255, 0.15);
     color: #d9d9d9;
     box-shadow: 0px 2px 2px chocolate;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.03);
+    }
   }
 }
 
@@ -160,7 +193,6 @@
   position: relative;
   width: 100%;
   height: 100%;
-  top: -20px;
   z-index: 1;
 }
 
@@ -181,16 +213,25 @@
   .Contact,
   .DownloadResume {
     color: var(--text-color);
+
     button {
       border-color: var(--border-color);
       color: var(--text-color);
     }
   }
 
+  .Container {
+    margin-top: 50px;
+  }
+
   .LaptopContent {
     position: static;
     width: 100%;
     z-index: 2;
+  }
+
+  .Content {
+    margin-bottom: 0;
   }
 
   .Stack {

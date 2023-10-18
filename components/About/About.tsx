@@ -52,13 +52,13 @@ export default function About() {
               </div>
               <div className={styles.Contact}>
                 <Button>
-                  <SiGmail />
+                  <SiGmail className={styles.GMail} />
                 </Button>
                 <Button>
-                  <SiGithub />
+                  <SiGithub className={styles.GitHub} />
                 </Button>
                 <Button>
-                  <SiTelegram />
+                  <SiTelegram className={styles.Telegram} />
                 </Button>
               </div>
               <div className={styles.DownloadResume}>
