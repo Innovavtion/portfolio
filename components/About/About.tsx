@@ -23,13 +23,13 @@ export default function About() {
           <div className={styles.LaptopContent}>
             <div className={styles.Content}>
               <p className={styles.TextFIO}>Nikita Pozhidaev</p>
-              <p className={styles.TextTypes}>
+              <p className={styles.TextTypes} translate="no">
                 <ReactTyped
                   strings={["Web Developer", "React Developer"]}
                   typeSpeed={150}
                   loop
                   backSpeed={35}
-                  cursorChar="❚‎"
+                  cursorChar="❚"
                   showCursor={true}
                 />
               </p>
