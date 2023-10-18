@@ -29,7 +29,7 @@ export default function About() {
                   typeSpeed={150}
                   loop
                   backSpeed={35}
-                  cursorChar="❚ "
+                  cursorChar="❚‎"
                   showCursor={true}
                 />
               </p>
