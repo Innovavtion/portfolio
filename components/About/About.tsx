@@ -13,7 +13,7 @@ import {
 } from "react-icons/si";
 import { IoLogoSass, IoIosMore } from "react-icons/io";
 import Image from "next/image";
-import LaptopSvg from "@/public/Laptop.svg";
+import LaptopSvg from "@/public/Images/Laptop.svg";
 
 export default function About() {
   return (

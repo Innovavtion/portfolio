@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import NextThemeProvider from "@/components/providers/theme/NextThemeProvider";
 import Navbar from "@/components/Navbar/Navbar";
 // font setting
-import { Golos_Text } from "next/font/google";
-const font = Golos_Text({ subsets: ["cyrillic"] });
+import { Roboto } from "next/font/google";
+const font = Roboto({ subsets: ["cyrillic"], weight: "500" });
 
 export const metadata: Metadata = {
   title: "Portfolio",
