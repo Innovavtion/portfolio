@@ -161,8 +161,8 @@
     margin-top: 35px;
     margin-bottom: 14px;
 
-    font-size: 21.5px;
-    font-weight: 900;
+    font-size: 18px;
+    font-weight: 700;
     font-family: sans-serif;
     background: none;
 
@@ -173,6 +173,15 @@
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    .DownloadIcon {
+      font-size: 25px;
+      margin-right: 10px;
+    }
+
+    p {
+      margin-top: 3px;
     }
   }
 }

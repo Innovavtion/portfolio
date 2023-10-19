@@ -12,6 +12,7 @@ import {
   SiGmail,
 } from "react-icons/si";
 import { IoLogoSass, IoIosMore } from "react-icons/io";
+import { FiDownload } from "react-icons/fi";
 import Image from "next/image";
 import LaptopSvg from "@/public/Images/Laptop.svg";
 
@@ -62,7 +63,10 @@ export default function About() {
                 </Button>
               </div>
               <div className={styles.DownloadResume}>
-                <Button>Download Resume</Button>
+                <Button>
+                  <FiDownload className={styles.DownloadIcon} />
+                  <p>Resume</p>
+                </Button>
               </div>
             </div>
           </div>
