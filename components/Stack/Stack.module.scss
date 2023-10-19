@@ -1,0 +1,75 @@
+.Stack {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+}
+
+.Content {
+  margin-top: 75px;
+  margin-bottom: 35px;
+
+  width: 100%;
+  max-width: 1024px;
+}
+
+.Divider {
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+  width: 100%;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.StackSection {
+  margin-top: 20px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-weight: lighter;
+  }
+}
+
+.Info {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  button {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    font-weight: 100;
+
+    background: none;
+    font-size: 16px;
+    border-radius: 7.5px;
+
+    svg {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+  }
+}
