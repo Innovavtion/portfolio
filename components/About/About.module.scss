@@ -16,9 +16,36 @@
 
   h2 {
     margin-bottom: 20px;
+
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
   }
+}
+
+.Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   p {
-    font-size: 18px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: cursive;
+  }
+
+  .MandalorinSvg {
+    font-size: 350px;
+    padding: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+
+    p {
+      text-align: center;
+    }
   }
 }
