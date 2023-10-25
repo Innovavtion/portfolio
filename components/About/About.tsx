@@ -1,5 +1,7 @@
 import styles from "./About.module.scss";
-import { PiFinnTheHumanThin } from "react-icons/pi";
+
+import Image from "next/image";
+import LaptopGif from "@/public/Images/LaptopGif.gif";
 
 export default function About() {
   return (
@@ -7,13 +9,28 @@ export default function About() {
       <div className={styles.Container}>
         <h2>About</h2>
         <div className={styles.Content}>
-          <p>
-            I am a web developer from Tomsk, Russia. Studied at TTIT - Tomsk
-            Technical College of Information Technologies as a developer of
-            multimedia web applications. I am currently looking for a job as a
-            Junior web developer.
-          </p>
-          <PiFinnTheHumanThin className={styles.MandalorinSvg} />
+          <div className={styles.AboutText}>
+            <p className={styles.MainText}>
+              Привет! Я веб разработчик из Томска, Россия. Работаю в основном с
+              клиентской частью сайта, но также есть опыт в сфере разработки
+              серверной части.
+            </p>
+            <p className={styles.MainText}>
+              Учился в ТТИТ - Томский Техникум Информационных Технологий, на
+              разработчика мультимедийных веб приложений.
+            </p>
+            <p className={styles.MainText}>
+              Сейчас активно ищу работу на Junior Web Developer / Junior
+              Frontend Developer.
+            </p>
+          </div>
+          <div className={styles.AboutImage}>
+            <Image
+              src={LaptopGif}
+              alt="LaptopGif"
+              className={styles.ImageGif}
+            />
+          </div>
         </div>
       </div>
     </div>
