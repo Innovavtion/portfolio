@@ -18,6 +18,12 @@
   h2 {
     text-align: center;
   }
+
+  :nth-child(2n) {
+    &.Content {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 .Content {
@@ -43,110 +49,145 @@
     overflow: hidden;
 
     object-position: left top;
+
+    .Image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
-  .Image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .PortfolioText {
+  .Card {
     width: 50%;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    padding: 25px 0;
     border-radius: 10px;
     box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.7);
 
-    button {
-      padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .CardText {
+      width: 100%;
+
       display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
 
-      font-weight: 100;
+      .Name {
+        width: 85%;
+        font-size: 24px;
+        font-weight: 900;
 
-      background: none;
-      font-size: 16px;
-      border-radius: 7.5px;
+        display: flex;
+        justify-content: flex-start;
+      }
 
-      svg {
-        font-size: 20px;
-        margin-right: 5px;
+      .Description {
+        margin-top: 10px;
+
+        width: 85%;
+        height: 155px;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+
+        font-size: 18px;
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
       }
     }
 
-    .NameProjects {
-      width: 85%;
-      font-size: 24px;
-      font-weight: 900;
+    .CardButton {
+      width: 100%;
 
       display: flex;
-      justify-content: flex-start;
-    }
-
-    .Description {
-      margin-top: 10px;
-      width: 85%;
-      font-size: 17px;
-      font-weight: 500;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-    }
-
-    .Stack {
-      margin-top: 10px;
-      width: 85%;
-
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      grid-row-gap: 10px;
-
-      :not(:last-child) {
-        margin-right: 7px;
-      }
-    }
-
-    .View {
-      margin-top: 10px;
-      width: 85%;
-
-      display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
 
-      :not(:last-child) {
-        margin-right: 7px;
+      button {
+        padding: 10px;
+        background: none;
+
+        font-size: 16px;
+        border-radius: 7.5px;
+
+        svg {
+          font-size: 20px;
+          margin-right: 5px;
+        }
+
+        &:hover {
+          background-color: var(--border-hover-color);
+        }
       }
 
-      svg {
-        margin-right: 0;
+      .Stack {
+        margin-top: 10px;
+        width: 85%;
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        grid-row-gap: 10px;
+
+        :not(:last-child) {
+          margin-right: 7px;
+        }
+      }
+
+      .View {
+        margin-top: 10px;
+        width: 85%;
+
+        display: flex;
+        align-items: center;
+
+        :not(:last-child) {
+          margin-right: 7px;
+        }
+
+        svg {
+          margin-right: 0;
+        }
       }
     }
   }
 }
 
 @media (max-width: 1024px) {
+  .Container {
+    :nth-child(2n) {
+      &.Content {
+        flex-direction: column;
+      }
+    }
+  }
+
   .Content {
     margin-top: 50px;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
 
-    .PortfolioImage {
+    .Card {
       max-width: 500px;
       width: 100%;
       height: 100%;
     }
 
-    .PortfolioText {
-      padding: 25px 0;
+    .PortfolioImage {
       max-width: 500px;
       width: 100%;
+      height: 100%;
     }
   }
 }

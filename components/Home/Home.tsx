@@ -23,10 +23,10 @@ export default function Home() {
         <div className={styles.ContainerLaptop}>
           <div className={styles.LaptopContent}>
             <div className={styles.Content}>
-              <p className={styles.TextFIO}>Nikita Pozhidaev</p>
+              <p className={styles.TextFIO}>Никита Пожидаев</p>
               <p className={styles.TextTypes} translate="no">
                 <ReactTyped
-                  strings={["Web Developer", "React Developer"]}
+                  strings={["Web Developer"]}
                   typeSpeed={150}
                   loop
                   backSpeed={35}
@@ -65,7 +65,7 @@ export default function Home() {
               <div className={styles.DownloadResume}>
                 <Button>
                   <FiDownload className={styles.DownloadIcon} />
-                  <p>Resume</p>
+                  <p>Резюме</p>
                 </Button>
               </div>
             </div>

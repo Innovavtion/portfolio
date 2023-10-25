@@ -7,13 +7,14 @@ import {
   SiTypescript,
   SiReact,
   SiNextdotjs,
-  SiSass,
   SiTailwindcss,
   SiVisualstudiocode,
   SiFigma,
   SiGithub,
   SiVercel,
 } from "react-icons/si";
+
+import { IoLogoSass } from "react-icons/io";
 
 export default function Stack() {
   return (
@@ -49,7 +50,7 @@ export default function Stack() {
               <p>Next</p>
             </Button>
             <Button>
-              <SiSass />
+              <IoLogoSass />
               <p>Sass</p>
             </Button>
             <Button>
