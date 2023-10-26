@@ -3,13 +3,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-top: 35px;
+  position: sticky;
+  top: 0;
+
+  z-index: 2;
 }
 
 .navbar {
-  height: 30px;
   width: 100%;
-  max-width: 1024px;
-  padding: 35px 0;
+  max-width: 1055px;
+  padding: 10px 15px;
+
+  border-radius: 35px;
+  background-color: var(--background-color);
+  box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.7);
 
   display: flex;
   align-items: center;
@@ -45,9 +54,10 @@
 }
 
 @media (max-width: 1024px) {
-  .navbar {
-    padding: 15px 0;
+  .container {
+    margin-top: 10px;
   }
+
   .navbarCenter {
     a {
       font-size: 16px;

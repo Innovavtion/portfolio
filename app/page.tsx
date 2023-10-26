@@ -6,11 +6,11 @@ import Stack from "@/components/Stack/Stack";
 
 export default function Page() {
   return (
-    <>
+    <div className={styles.Content}>
       <Home />
       <About />
       <Portfolio />
       <Stack />
-    </>
+    </div>
   );
 }
