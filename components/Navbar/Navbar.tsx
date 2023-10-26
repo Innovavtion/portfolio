@@ -1,32 +1,39 @@
 "use client";
 
 import styles from "./Navbar.module.scss";
-
-import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
-
-import ButtonNavbar from "./Button/ButtonNavbar";
 import { RiMoonLine, RiSunLine, RiHome5Line } from "react-icons/ri";
 
+import ButtonNavbar from "./Button/ButtonNavbar";
+import useNavbar from "./useNavbar";
+
+// Animation
+import { motion, useTransform, useScroll } from "framer-motion";
+
 export default function Navbar() {
-  const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme, updateTheme } = useNavbar();
 
-  const updateTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
+  // Animation for Navbar - Используем в motion.div
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // Текущие значение в пикселях
+  const { scrollY } = useScroll();
 
-  if (!mounted) {
-    return null;
-  }
+  // Диапозон работы анимации в пикселях
+  const offsetY = [0, 35];
+
+  // Стили для длины и тени - Navbar
+  const widthNavbar = [1024, 1055];
+  const boxShadow = ["none", "0px 7px 25px rgba(0, 0, 0, 0.7)"];
+
+  // Хук трансформ возвращает текущие значение и прокидываем в компонент motion.div, в тег style для анимации
+  const width = useTransform(scrollY, offsetY, widthNavbar);
+  const shadow = useTransform(scrollY, offsetY, boxShadow);
 
   return (
     <div className={styles.container}>
-      <div className={styles.navbar}>
+      <motion.div
+        className={styles.navbar}
+        style={{ maxWidth: width, boxShadow: shadow }}
+      >
         <div className={styles.navbarLeft}>
           <ButtonNavbar>
             <RiHome5Line className={styles.logo} />
@@ -42,7 +49,7 @@ export default function Navbar() {
             {theme === "dark" ? <RiMoonLine /> : <RiSunLine />}
           </ButtonNavbar>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
