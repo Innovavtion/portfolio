@@ -1,7 +1,7 @@
 import "./globals.scss";
 import type { Metadata } from "next";
-import NextThemeProvider from "@/components/providers/theme/NextThemeProvider";
-import Navbar from "@/components/Navbar/Navbar";
+import NextThemeProvider from "@/components/Utils/providers/theme/NextThemeProvider";
+import Navbar from "@/components/Elements/Navbar/Navbar";
 // font setting
 import { Roboto } from "next/font/google";
 const font = Roboto({ subsets: ["cyrillic"], weight: "500" });

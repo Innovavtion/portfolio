@@ -1,5 +1,5 @@
 import styles from "./Stack.module.scss";
-import { Button } from "@/components/Base/Button/Button";
+import { Button } from "@/components/Elements/Base/Button/Button";
 import {
   SiHtml5,
   SiCss3,

@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "../Base/Button/Button";
+import { Button } from "@/components/Elements/Base/Button/Button";
 import styles from "./Home.module.scss";
 import ReactTyped from "react-typed";
 import {

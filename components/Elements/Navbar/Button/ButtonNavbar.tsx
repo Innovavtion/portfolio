@@ -1,5 +1,5 @@
 import styles from "./ButtonNavbar.module.scss";
-import { Button, ButtonProps } from "@/components/Base/Button/Button";
+import { Button, ButtonProps } from "@/components/Elements/Base/Button/Button";
 
 interface Props extends ButtonProps {}
 

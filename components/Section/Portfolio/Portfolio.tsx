@@ -3,7 +3,7 @@ import styles from "./Portfolio.module.scss";
 import Image from "next/image";
 import KanbanImage from "@/public/Images/Kanban.png";
 
-import { Button } from "@/components/Base/Button/Button";
+import { Button } from "@/components/Elements/Base/Button/Button";
 
 import { SiTypescript, SiNextdotjs, SiGithub, SiMui } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
