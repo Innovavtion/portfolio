@@ -1,8 +1,8 @@
 "use client";
 
 import styles from "./Navbar.module.scss";
-import { RiMoonLine, RiSunLine, RiHome5Line } from "react-icons/ri";
 
+import { RiMoonLine, RiSunLine, RiHome5Line } from "react-icons/ri";
 import ButtonNavbar from "./Button/ButtonNavbar";
 import useNavbar from "./useNavbar";
 
@@ -35,14 +35,16 @@ export default function Navbar() {
         style={{ maxWidth: width, boxShadow: shadow }}
       >
         <div className={styles.navbarLeft}>
-          <ButtonNavbar>
-            <RiHome5Line className={styles.logo} />
-          </ButtonNavbar>
+          <a href="#Home">
+            <ButtonNavbar>
+              <RiHome5Line className={styles.logo} />
+            </ButtonNavbar>
+          </a>
         </div>
         <div className={styles.navbarCenter}>
-          <a>About</a>
-          <a>Portfolio</a>
-          <a>Stack</a>
+          <a href="#About">About</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#Stack">Stack</a>
         </div>
         <div className={styles.navbarRight}>
           <ButtonNavbar onClick={() => updateTheme()}>

@@ -13,7 +13,7 @@ import { portfolioData } from "./Portfolio.data";
 
 export default function Portfolio() {
   return (
-    <div className={styles.Portfolio}>
+    <div id="Portfolio" className={styles.Portfolio}>
       <div className={styles.Container}>
         <h2>Portfolio</h2>
         {portfolioData.map((item, key) => (

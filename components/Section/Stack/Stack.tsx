@@ -18,7 +18,7 @@ import { IoLogoSass } from "react-icons/io";
 
 export default function Stack() {
   return (
-    <div className={styles.Stack}>
+    <div id="Stack" className={styles.Stack}>
       <div className={styles.Content}>
         <h2>Stack</h2>
         <div className={styles.StackSection}>

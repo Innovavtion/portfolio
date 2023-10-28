@@ -5,7 +5,7 @@ import LaptopGif from "@/public/Images/LaptopGif.gif";
 
 export default function About() {
   return (
-    <div className={styles.About}>
+    <div id="About" className={styles.About}>
       <div className={styles.Container}>
         <h2>About</h2>
         <div className={styles.Content}>

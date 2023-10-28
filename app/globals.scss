@@ -6,6 +6,13 @@
   z-index: 0;
 }
 
+// Плавный скролл до контента
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 html,
 body {
   /* Убрать выделение у всего текста на сайте */

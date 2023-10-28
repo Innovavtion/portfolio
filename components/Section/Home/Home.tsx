@@ -18,7 +18,7 @@ import LaptopSvg from "@/public/Images/Laptop.svg";
 
 export default function Home() {
   return (
-    <div className={styles.Home}>
+    <div id="Home" className={styles.Home}>
       <div className={styles.Container}>
         <div className={styles.ContainerLaptop}>
           <div className={styles.LaptopContent}>
