@@ -47,9 +47,11 @@ export default function Home() {
                 <Button>
                   <SiTailwindcss className={styles.Tailwind} />
                 </Button>
-                <Button>
-                  <IoIosMore />
-                </Button>
+                <a href="#Stack">
+                  <Button>
+                    <IoIosMore />
+                  </Button>
+                </a>
               </div>
               <div className={styles.Contact}>
                 <Button>
