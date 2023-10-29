@@ -26,7 +26,7 @@ export default function Home() {
               <p className={styles.TextFIO}>Никита Пожидаев</p>
               <p className={styles.TextTypes} translate="no">
                 <ReactTyped
-                  strings={["Web Developer"]}
+                  strings={["Frontend Developer", "Web Developer"]}
                   typeSpeed={150}
                   loop
                   backSpeed={35}
@@ -54,21 +54,32 @@ export default function Home() {
                 </a>
               </div>
               <div className={styles.Contact}>
-                <Button>
-                  <SiGmail className={styles.GMail} />
-                </Button>
-                <Button>
-                  <SiGithub className={styles.GitHub} />
-                </Button>
-                <Button>
-                  <SiTelegram className={styles.Telegram} />
-                </Button>
+                <a href="mailto:pozhidaevw@gmail.com" target="_blank">
+                  <Button>
+                    <SiGmail className={styles.GMail} />
+                  </Button>
+                </a>
+                <a href="https://github.com/Innovavtion" target="_blank">
+                  <Button>
+                    <SiGithub className={styles.GitHub} />
+                  </Button>
+                </a>
+                <a href="https://t.me/nikitafiksik" target="_blank">
+                  <Button>
+                    <SiTelegram className={styles.Telegram} />
+                  </Button>
+                </a>
               </div>
               <div className={styles.DownloadResume}>
-                <Button>
-                  <FiDownload className={styles.DownloadIcon} />
-                  <p>Резюме</p>
-                </Button>
+                <a
+                  href="https://docs.google.com/document/d/17JWNch7-wGpqAlf2opzJ8BYCJfywrtl80mreKnpjxOU/edit?usp=drive_link"
+                  target="_blank"
+                >
+                  <Button>
+                    <FiDownload className={styles.DownloadIcon} />
+                    <p>Резюме</p>
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
