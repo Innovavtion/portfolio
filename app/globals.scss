@@ -29,6 +29,10 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 
+  a {
+    text-decoration: none;
+  }
+
   /* Убрать скроллбар */
   &::-webkit-scrollbar {
     display: none;
