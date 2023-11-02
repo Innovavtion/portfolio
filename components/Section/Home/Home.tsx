@@ -8,6 +8,7 @@ import {
   SiReact,
   SiTailwindcss,
   SiGithub,
+  SiDiscord,
   SiTelegram,
   SiGmail,
 } from "react-icons/si";
@@ -62,6 +63,14 @@ export default function Home() {
                 <a href="https://github.com/Innovavtion" target="_blank">
                   <Button>
                     <SiGithub className={styles.GitHub} />
+                  </Button>
+                </a>
+                <a
+                  href="https://discordapp.com/users/innovationn"
+                  target="_blank"
+                >
+                  <Button>
+                    <SiDiscord className={styles.SiDiscord} />
                   </Button>
                 </a>
                 <a href="https://t.me/nikitaitdev" target="_blank">
