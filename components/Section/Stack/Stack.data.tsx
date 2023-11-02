@@ -15,41 +15,41 @@ import {
 import { IoLogoSass } from "react-icons/io";
 
 interface Tool {
-  nameTool: string;
+  text: string;
   icon: React.ReactNode;
 }
 
-interface StackProps {
-  nameSection: string;
-  listSection: Array<Tool>;
+interface Stack {
+  text: string;
+  tools: Array<Tool>;
 }
 
-export const StackData: Array<StackProps> = [
+export const StackData: Array<Stack> = [
   {
-    nameSection: "Development",
-    listSection: [
-      { nameTool: "HTML5", icon: <SiHtml5 /> },
-      { nameTool: "CSS3", icon: <SiCss3 /> },
-      { nameTool: "JavaScript", icon: <SiJavascript /> },
-      { nameTool: "TypeScript", icon: <SiTypescript /> },
-      { nameTool: "React", icon: <SiReact /> },
-      { nameTool: "Next", icon: <SiNextdotjs /> },
-      { nameTool: "Sass", icon: <IoLogoSass /> },
-      { nameTool: "Tailwind", icon: <SiTailwindcss /> },
+    text: "Development",
+    tools: [
+      { text: "HTML5", icon: <SiHtml5 /> },
+      { text: "CSS3", icon: <SiCss3 /> },
+      { text: "JavaScript", icon: <SiJavascript /> },
+      { text: "TypeScript", icon: <SiTypescript /> },
+      { text: "React", icon: <SiReact /> },
+      { text: "Next", icon: <SiNextdotjs /> },
+      { text: "Sass", icon: <IoLogoSass /> },
+      { text: "Tailwind", icon: <SiTailwindcss /> },
     ],
   },
   {
-    nameSection: "Apps",
-    listSection: [
-      { nameTool: "VS Code", icon: <SiVisualstudiocode /> },
-      { nameTool: "Figma", icon: <SiFigma /> },
+    text: "Apps",
+    tools: [
+      { text: "VS Code", icon: <SiVisualstudiocode /> },
+      { text: "Figma", icon: <SiFigma /> },
     ],
   },
   {
-    nameSection: "Services",
-    listSection: [
-      { nameTool: "GitHub", icon: <SiGithub /> },
-      { nameTool: "Vercel", icon: <SiVercel /> },
+    text: "Services",
+    tools: [
+      { text: "GitHub", icon: <SiGithub /> },
+      { text: "Vercel", icon: <SiVercel /> },
     ],
   },
 ];

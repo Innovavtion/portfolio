@@ -21,27 +21,27 @@ interface LinkProps {
 }
 
 interface StackProps {
-  name: string;
+  text: string;
   icon: React.ReactNode;
 }
 
 interface portfolioProps {
-  name: string;
+  text: string;
   description: string;
   stack: Array<StackProps>;
   image: StaticImageData;
   link: LinkProps;
 }
 
-export const portfolioData: Array<portfolioProps> = [
+export const PortfolioData: Array<portfolioProps> = [
   {
-    name: "Kanban",
+    text: "Kanban",
     description:
       "Приложение для управления развитием проектов, который помогает наглядно представить объем задач и добиться максимальной эффективности разработки.",
     stack: [
-      { name: "TypeScript", icon: <SiTypescript /> },
-      { name: "Next", icon: <SiNextdotjs /> },
-      { name: "Mui", icon: <SiMui /> },
+      { text: "TypeScript", icon: <SiTypescript /> },
+      { text: "Next", icon: <SiNextdotjs /> },
+      { text: "Mui", icon: <SiMui /> },
     ],
     image: KanbanImage,
     link: {
@@ -50,14 +50,14 @@ export const portfolioData: Array<portfolioProps> = [
     },
   },
   {
-    name: "Weather",
+    text: "Weather",
     description:
       "Маленькое приложение для просмотра текущей погоды в нескольких городах.",
     image: WeatherImage,
     stack: [
-      { name: "TypeScript", icon: <SiTypescript /> },
-      { name: "React", icon: <SiReact /> },
-      { name: "Tailwind", icon: <SiTailwindcss /> },
+      { text: "TypeScript", icon: <SiTypescript /> },
+      { text: "React", icon: <SiReact /> },
+      { text: "Tailwind", icon: <SiTailwindcss /> },
     ],
     link: {
       github: "https://github.com/Innovavtion/weather-react",
@@ -65,13 +65,13 @@ export const portfolioData: Array<portfolioProps> = [
     },
   },
   {
-    name: "To-Do",
+    text: "To-Do",
     description:
       "Классический список задач с расширением базовых возможностей, для большего удобства использования приложения.",
     stack: [
-      { name: "JavaScript", icon: <SiJavascript /> },
-      { name: "React", icon: <SiReact /> },
-      { name: "Sass", icon: <IoLogoSass /> },
+      { text: "JavaScript", icon: <SiJavascript /> },
+      { text: "React", icon: <SiReact /> },
+      { text: "Sass", icon: <IoLogoSass /> },
     ],
     image: ToDoImage,
     link: {

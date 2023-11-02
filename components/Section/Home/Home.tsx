@@ -1,8 +1,12 @@
 "use client";
+import styles from "./Home.module.scss";
+
+import Image from "next/image";
+import LaptopSvg from "@/public/Images/Laptop.svg";
 
 import { Button } from "@/components/Elements/Base/Button/Button";
-import styles from "./Home.module.scss";
 import ReactTyped from "react-typed";
+
 import {
   SiTypescript,
   SiReact,
@@ -14,8 +18,6 @@ import {
 } from "react-icons/si";
 import { IoLogoSass, IoIosMore } from "react-icons/io";
 import { FiDownload } from "react-icons/fi";
-import Image from "next/image";
-import LaptopSvg from "@/public/Images/Laptop.svg";
 
 export default function Home() {
   return (

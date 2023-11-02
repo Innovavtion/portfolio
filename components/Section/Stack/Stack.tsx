@@ -11,13 +11,13 @@ export default function Stack() {
         <h2>Stack</h2>
         {StackData.map((item, key) => (
           <div className={styles.StackSection} key={key}>
-            <h4>{item.nameSection}</h4>
+            <h4>{item.text}</h4>
             <div className={styles.Divider} />
             <div className={styles.Info}>
-              {item.listSection.map((itemTool, key) => (
+              {item.tools.map((itemTool, key) => (
                 <Button key={key}>
                   {itemTool.icon}
-                  <p>{itemTool.nameTool}</p>
+                  <p>{itemTool.text}</p>
                 </Button>
               ))}
             </div>
