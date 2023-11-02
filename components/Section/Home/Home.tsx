@@ -64,7 +64,7 @@ export default function Home() {
                     <SiGithub className={styles.GitHub} />
                   </Button>
                 </a>
-                <a href="https://t.me/nikitafiksik" target="_blank">
+                <a href="https://t.me/nikitaitdev" target="_blank">
                   <Button>
                     <SiTelegram className={styles.Telegram} />
                   </Button>
