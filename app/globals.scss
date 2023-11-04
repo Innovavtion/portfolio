@@ -34,9 +34,19 @@ body {
     color: var(--text-color);
   }
 
-  /* Убрать скроллбар */
+  /* Стили скролл бара */
   &::-webkit-scrollbar {
-    display: none;
+    width: 16px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 100px;
+    border: 4px solid var(--background-color);
+    &:hover {
+      background-color: var(--scrollbar-thumb-hover-color);
+      cursor: pointer;
+    }
   }
 
   /* Убрать hover mobile */
@@ -60,6 +70,8 @@ body {
   --text-color: #1c1b1f;
   --border-color: rgba(0, 0, 0, 0.15);
   --border-hover-color: rgba(0, 0, 0, 0.03);
+  --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+  --scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.25);
 }
 
 :root[data-theme="dark"] {
@@ -69,4 +81,6 @@ body {
   --text-color: #d9d9d9;
   --border-color: rgba(255, 255, 255, 0.15);
   --border-hover-color: rgba(255, 255, 255, 0.03);
+  --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
+  --scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.25);
 }
