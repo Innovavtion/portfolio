@@ -1,11 +1,11 @@
 import {
-  SiHtml5,
-  SiCss3,
   SiJavascript,
   SiTypescript,
   SiReact,
   SiNextdotjs,
+  SiNestjs,
   SiTailwindcss,
+  SiMui,
   SiVisualstudiocode,
   SiFigma,
   SiGithub,
@@ -28,14 +28,14 @@ export const StackData: Array<Stack> = [
   {
     text: "Development",
     tools: [
-      { text: "HTML5", icon: <SiHtml5 /> },
-      { text: "CSS3", icon: <SiCss3 /> },
       { text: "JavaScript", icon: <SiJavascript /> },
       { text: "TypeScript", icon: <SiTypescript /> },
       { text: "React", icon: <SiReact /> },
       { text: "Next", icon: <SiNextdotjs /> },
+      { text: "Nest", icon: <SiNestjs /> },
       { text: "Sass", icon: <IoLogoSass /> },
       { text: "Tailwind", icon: <SiTailwindcss /> },
+      { text: "Mui", icon: <SiMui /> },
     ],
   },
   {
