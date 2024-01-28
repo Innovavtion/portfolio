@@ -9,7 +9,6 @@ import {
   SiTypescript,
   SiReact,
   SiNextdotjs,
-  SiNestjs,
   SiTailwindcss,
   SiMui,
 } from "react-icons/si";
@@ -42,7 +41,6 @@ export const PortfolioData: Array<portfolioProps> = [
     stack: [
       { text: "TypeScript", icon: <SiTypescript /> },
       { text: "Next", icon: <SiNextdotjs /> },
-      { text: "Nest", icon: <SiNestjs /> },
       { text: "Mui", icon: <SiMui /> },
     ],
     image: KanbanImage,

@@ -20,8 +20,7 @@ export default function About() {
               разработчика мультимедийных веб приложений.
             </p>
             <p className={styles.MainText}>
-              Сейчас активно ищу работу на Junior Frontend Developer / Junior
-              Web Developer.
+              Сейчас активно ищу работу на Junior Frontend/Backend Developer
             </p>
           </div>
           <div className={styles.AboutImage}>

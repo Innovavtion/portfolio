@@ -29,7 +29,11 @@ export default function Home() {
               <p className={styles.TextFIO}>Никита Пожидаев</p>
               <p className={styles.TextTypes} translate="no">
                 <ReactTyped
-                  strings={["Frontend Developer", "Web Developer"]}
+                  strings={[
+                    "Frontend Developer",
+                    "Backend Developer",
+                    "Fullstack Developer",
+                  ]}
                   typeSpeed={150}
                   loop
                   backSpeed={35}

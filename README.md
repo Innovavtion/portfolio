@@ -1,6 +1,6 @@
-## Getting Started
+## Getting started
 
-**Name:** "Portfolio"
+**Name:** Portfolio
 
 **Description:** Simple portfolio for search work
 
