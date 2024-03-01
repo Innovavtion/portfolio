@@ -2,13 +2,23 @@ import {
   SiJavascript,
   SiTypescript,
   SiReact,
+  SiRedux,
   SiNextdotjs,
-  SiNestjs,
   SiTailwindcss,
   SiMui,
-  SiVisualstudiocode,
+  SiWebpack,
+  SiEslint,
+  SiPrettier,
+  SiStylelint,
+  SiNestjs,
+  SiPostgresql,
+  SiDocker,
+  SiMysql,
+  SiJest,
+  SiStorybook,
+  SiTestinglibrary,
+  SiPostman,
   SiFigma,
-  SiGithub,
   SiVercel,
 } from "react-icons/si";
 
@@ -26,30 +36,55 @@ interface Stack {
 
 export const StackData: Array<Stack> = [
   {
-    text: "Development",
+    text: "Client Development",
     tools: [
       { text: "JavaScript", icon: <SiJavascript /> },
       { text: "TypeScript", icon: <SiTypescript /> },
       { text: "React", icon: <SiReact /> },
+      { text: "Redux", icon: <SiRedux /> },
       { text: "Next", icon: <SiNextdotjs /> },
-      { text: "Nest", icon: <SiNestjs /> },
       { text: "Sass", icon: <IoLogoSass /> },
       { text: "Tailwind", icon: <SiTailwindcss /> },
       { text: "Mui", icon: <SiMui /> },
     ],
   },
   {
-    text: "Apps",
+    text: "Server Development",
     tools: [
-      { text: "VS Code", icon: <SiVisualstudiocode /> },
-      { text: "Figma", icon: <SiFigma /> },
+      { text: "Nest", icon: <SiNestjs /> },
+      { text: "MySql", icon: <SiMysql /> },
+      { text: "Postgres", icon: <SiPostgresql /> },
+      { text: "Docker", icon: <SiDocker /> },
     ],
   },
   {
-    text: "Services",
+    text: "Environment",
     tools: [
-      { text: "GitHub", icon: <SiGithub /> },
-      { text: "Vercel", icon: <SiVercel /> },
+      { text: "Webpack", icon: <SiWebpack /> },
+      { text: "Eslint", icon: <SiEslint /> },
+      { text: "Prettier", icon: <SiPrettier /> },
+      { text: "Stylelint", icon: <SiStylelint /> },
     ],
   },
 ];
+
+/*
+
+{
+  text: "Testing",
+  tools: [
+    { text: "Jest", icon: <SiJest /> },
+    { text: "Testing Library", icon: <SiTestinglibrary /> },
+    { text: "Storybook", icon: <SiStorybook /> },
+    { text: "Postman", icon: <SiPostman /> },
+  ],
+},
+{
+  text: "Other",
+  tools: [
+    { text: "Figma", icon: <SiFigma /> },
+    { text: "Vercel", icon: <SiVercel /> },
+  ],
+},
+
+*/
