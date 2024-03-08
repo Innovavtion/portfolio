@@ -37,6 +37,7 @@ export default function Home() {
                   typeSpeed={150}
                   loop
                   backSpeed={35}
+                  backDelay={3000}
                   cursorChar="❚"
                   showCursor={true}
                 />

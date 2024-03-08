@@ -49,15 +49,6 @@ export const StackData: Array<Stack> = [
     ],
   },
   {
-    text: "Server Development",
-    tools: [
-      { text: "Nest", icon: <SiNestjs /> },
-      { text: "MySql", icon: <SiMysql /> },
-      { text: "Postgres", icon: <SiPostgresql /> },
-      { text: "Docker", icon: <SiDocker /> },
-    ],
-  },
-  {
     text: "Environment",
     tools: [
       { text: "Webpack", icon: <SiWebpack /> },
@@ -70,6 +61,15 @@ export const StackData: Array<Stack> = [
 
 /*
 
+{
+  text: "Server Development",
+  tools: [
+    { text: "Nest", icon: <SiNestjs /> },
+    { text: "MySql", icon: <SiMysql /> },
+    { text: "Postgres", icon: <SiPostgresql /> },
+    { text: "Docker", icon: <SiDocker /> },
+  ],
+},
 {
   text: "Testing",
   tools: [
