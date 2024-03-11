@@ -41,7 +41,7 @@ export const StackData: Array<Stack> = [
       { text: "JavaScript", icon: <SiJavascript /> },
       { text: "TypeScript", icon: <SiTypescript /> },
       { text: "React", icon: <SiReact /> },
-      { text: "Redux", icon: <SiRedux /> },
+      // { text: "Redux", icon: <SiRedux /> },
       { text: "Next", icon: <SiNextdotjs /> },
       { text: "Sass", icon: <IoLogoSass /> },
       { text: "Tailwind", icon: <SiTailwindcss /> },
@@ -54,7 +54,7 @@ export const StackData: Array<Stack> = [
       { text: "Webpack", icon: <SiWebpack /> },
       { text: "Eslint", icon: <SiEslint /> },
       { text: "Prettier", icon: <SiPrettier /> },
-      { text: "Stylelint", icon: <SiStylelint /> },
+      // { text: "Stylelint", icon: <SiStylelint /> },
     ],
   },
 ];
