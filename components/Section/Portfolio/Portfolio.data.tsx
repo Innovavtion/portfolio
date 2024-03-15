@@ -34,6 +34,7 @@ interface portfolioProps {
 }
 
 export const PortfolioData: Array<portfolioProps> = [
+  /* 
   {
     text: "Kanban",
     description:
@@ -46,9 +47,10 @@ export const PortfolioData: Array<portfolioProps> = [
     image: KanbanImage,
     link: {
       github: "https://github.com/Innovavtion/kanban-board",
-      vercel: "https://kanban-board-e2sm.vercel.app/",
+      vercel: "-",
     },
   },
+  */
   {
     text: "Weather",
     description:
