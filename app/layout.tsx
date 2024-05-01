@@ -9,6 +9,12 @@ const font = Roboto({ subsets: ["cyrillic"], weight: "500" });
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Portfolio -> Home",
+  viewport: {
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+    width: "device-width",
+  },
 };
 
 type Props = {

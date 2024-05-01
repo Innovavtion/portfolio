@@ -8,7 +8,12 @@
 
 **Linters and Formatters:** Eslint, Prettier
 
-**Expand Application:**
+**Development**:
+
+1. `npm/yarn install`
+2. `npm/yarn dev`
+
+**Production:**
 
 1. `npm/yarn install`
 2. `npm/yarn build`

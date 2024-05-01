@@ -11,16 +11,16 @@ export default function About() {
         <div className={styles.Content}>
           <div className={styles.AboutText}>
             <p className={styles.MainText}>
-              Привет! Я веб разработчик из Томска, Россия. В основом занимаюсь
+              Привет!!! Я веб разработчик из Томска, Россия. В основом занимаюсь
               разработкой клиентской части веб приложений, но также есть опыт в
-              разработки серверной части
+              разработки серверной части.
             </p>
             <p className={styles.MainText}>
               Учился в Томский Техникум Информационных Технологий,
-              Информационные системы и программирование
+              Информационные системы и программирование.
             </p>
             <p className={styles.MainText}>
-              Сейчас активно ищу работу на Frontend Developer
+              Сейчас активно ищу работу на Frontend Developer.
             </p>
           </div>
           <div className={styles.AboutImage}>

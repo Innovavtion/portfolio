@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 import KanbanImage from "@/public/Images/Kanban.png";
 import WeatherImage from "@/public/Images/Weather.png";
 import ToDoImage from "@/public/Images/ToDo.png";
+import PortfolioImage from "@/public/Images/Portfolio.png";
 
 import {
   SiJavascript,
@@ -17,7 +18,7 @@ import { IoLogoSass } from "react-icons/io";
 
 interface LinkProps {
   github: string;
-  vercel: string;
+  vercel?: string;
 }
 
 interface StackProps {
@@ -34,23 +35,21 @@ interface portfolioProps {
 }
 
 export const PortfolioData: Array<portfolioProps> = [
-  /* 
   {
-    text: "Kanban",
+    text: "Portfolio",
     description:
-      "Приложение для управления развитием проектов, который помогает наглядно представить объем задач и добиться максимальной эффективности разработки.",
+      "Одностраничное приложение, описывающие проффесиональные навыки и умения разработчика.",
     stack: [
       { text: "TypeScript", icon: <SiTypescript /> },
       { text: "Next", icon: <SiNextdotjs /> },
-      { text: "Mui", icon: <SiMui /> },
+      { text: "Sass", icon: <IoLogoSass /> },
     ],
-    image: KanbanImage,
+    image: PortfolioImage,
     link: {
-      github: "https://github.com/Innovavtion/kanban-board",
-      vercel: "-",
+      github: "https://github.com/Innovavtion/portfolio",
+      vercel: "https://npminimalism.vercel.app/",
     },
   },
-  */
   {
     text: "Weather",
     description:
@@ -63,7 +62,7 @@ export const PortfolioData: Array<portfolioProps> = [
     ],
     link: {
       github: "https://github.com/Innovavtion/weather-react",
-      vercel: "https://weather-react-two-sigma.vercel.app/",
+      vercel: "https://weather-react-simple.vercel.app",
     },
   },
   {
@@ -78,7 +77,24 @@ export const PortfolioData: Array<portfolioProps> = [
     image: ToDoImage,
     link: {
       github: "https://github.com/Innovavtion/to-do-react",
-      vercel: "https://to-do-react-first-project.vercel.app/",
+      vercel: "https://to-do-react-project.vercel.app",
     },
   },
+  /*
+  {
+    text: "Kanban",
+    description:
+      "Приложение для управления развитием проектов, который помогает наглядно представить объем задач и добиться максимальной эффективности разработки.",
+    stack: [
+      { text: "TypeScript", icon: <SiTypescript /> },
+      { text: "Next", icon: <SiNextdotjs /> },
+      { text: "Mui", icon: <SiMui /> },
+    ],
+    image: KanbanImage,
+    link: {
+      github: "https://github.com/Innovavtion/kanban-board",
+      vercel: undefined,
+    },
+  },
+  */
 ];

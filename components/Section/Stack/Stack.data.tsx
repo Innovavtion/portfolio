@@ -7,6 +7,7 @@ import {
   SiTailwindcss,
   SiMui,
   SiWebpack,
+  SiTurborepo,
   SiEslint,
   SiPrettier,
   SiStylelint,
@@ -14,6 +15,8 @@ import {
   SiPostgresql,
   SiDocker,
   SiMysql,
+  SiPrisma,
+  SiGraphql,
   SiJest,
   SiStorybook,
   SiTestinglibrary,
@@ -41,7 +44,7 @@ export const StackData: Array<Stack> = [
       { text: "JavaScript", icon: <SiJavascript /> },
       { text: "TypeScript", icon: <SiTypescript /> },
       { text: "React", icon: <SiReact /> },
-      // { text: "Redux", icon: <SiRedux /> },
+      { text: "Redux (Toolkit)", icon: <SiRedux /> },
       { text: "Next", icon: <SiNextdotjs /> },
       { text: "Sass", icon: <IoLogoSass /> },
       { text: "Tailwind", icon: <SiTailwindcss /> },
@@ -49,9 +52,19 @@ export const StackData: Array<Stack> = [
     ],
   },
   {
+    text: "Server Development",
+    tools: [
+      { text: "Nest", icon: <SiNestjs /> },
+      { text: "Prisma", icon: <SiPrisma /> },
+      { text: "Graphql", icon: <SiGraphql /> },
+      { text: "Postgres", icon: <SiPostgresql /> },
+    ],
+  },
+  {
     text: "Environment",
     tools: [
       { text: "Webpack", icon: <SiWebpack /> },
+      { text: "Turbo", icon: <SiTurborepo /> },
       { text: "Eslint", icon: <SiEslint /> },
       { text: "Prettier", icon: <SiPrettier /> },
       // { text: "Stylelint", icon: <SiStylelint /> },
@@ -60,16 +73,6 @@ export const StackData: Array<Stack> = [
 ];
 
 /*
-
-{
-  text: "Server Development",
-  tools: [
-    { text: "Nest", icon: <SiNestjs /> },
-    { text: "MySql", icon: <SiMysql /> },
-    { text: "Postgres", icon: <SiPostgresql /> },
-    { text: "Docker", icon: <SiDocker /> },
-  ],
-},
 {
   text: "Testing",
   tools: [
