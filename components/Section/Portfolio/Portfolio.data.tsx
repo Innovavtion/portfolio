@@ -12,6 +12,7 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiMui,
+  SiNestjs,
 } from "react-icons/si";
 
 import { IoLogoSass } from "react-icons/io";
@@ -30,7 +31,7 @@ interface portfolioProps {
   text: string;
   description: string;
   stack: Array<StackProps>;
-  image: StaticImageData;
+  image: StaticImageData | undefined;
   link: LinkProps;
 }
 
@@ -80,7 +81,20 @@ export const PortfolioData: Array<portfolioProps> = [
       vercel: "https://to-do-react-project.vercel.app",
     },
   },
-  /*
+  {
+    text: "Chat-Fullstack",
+    description: "Проект для переписки двух или нескольких человек в группе.",
+    stack: [
+      { text: "TypeScript", icon: <SiTypescript /> },
+      { text: "Nest", icon: <SiNestjs /> },
+      { text: "React", icon: <SiReact /> },
+    ],
+    image: undefined,
+    link: {
+      github: "https://github.com/Innovavtion/chat-fullstack",
+      vercel: undefined,
+    },
+  },
   {
     text: "Kanban",
     description:
@@ -96,5 +110,4 @@ export const PortfolioData: Array<portfolioProps> = [
       vercel: undefined,
     },
   },
-  */
 ];

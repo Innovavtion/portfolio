@@ -7,6 +7,7 @@ import {
   SiTailwindcss,
   SiMui,
   SiWebpack,
+  SiVite,
   SiTurborepo,
   SiEslint,
   SiPrettier,
@@ -23,6 +24,7 @@ import {
   SiPostman,
   SiFigma,
   SiVercel,
+  SiSwagger,
 } from "react-icons/si";
 
 import { IoLogoSass } from "react-icons/io";
@@ -44,8 +46,8 @@ export const StackData: Array<Stack> = [
       { text: "JavaScript", icon: <SiJavascript /> },
       { text: "TypeScript", icon: <SiTypescript /> },
       { text: "React", icon: <SiReact /> },
-      { text: "Redux (Toolkit)", icon: <SiRedux /> },
       { text: "Next", icon: <SiNextdotjs /> },
+      { text: "Redux (Toolkit)", icon: <SiRedux /> },
       { text: "Sass", icon: <IoLogoSass /> },
       { text: "Tailwind", icon: <SiTailwindcss /> },
       { text: "Mui", icon: <SiMui /> },
@@ -56,8 +58,8 @@ export const StackData: Array<Stack> = [
     tools: [
       { text: "Nest", icon: <SiNestjs /> },
       { text: "Prisma", icon: <SiPrisma /> },
-      { text: "Graphql", icon: <SiGraphql /> },
       { text: "Postgres", icon: <SiPostgresql /> },
+      { text: "Swagger", icon: <SiSwagger /> },
     ],
   },
   {
@@ -85,6 +87,7 @@ export const StackData: Array<Stack> = [
 {
   text: "Other",
   tools: [
+    { text: "Graphql", icon: <SiGraphql /> },
     { text: "Figma", icon: <SiFigma /> },
     { text: "Vercel", icon: <SiVercel /> },
   ],

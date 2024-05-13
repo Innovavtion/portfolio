@@ -108,6 +108,18 @@
       height: 100%;
       object-fit: cover;
     }
+
+    svg {
+      width: 100%;
+      min-width: 502px;
+      font-size: 75px;
+      margin-right: 5px;
+    }
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .Card {
@@ -283,6 +295,10 @@
       overflow: hidden;
 
       box-shadow: none;
+
+      svg {
+        min-width: 0;
+      }
     }
   }
 }

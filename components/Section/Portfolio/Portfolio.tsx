@@ -13,6 +13,8 @@ import Link from "next/link";
 import { SiGithub } from "react-icons/si";
 import { FiExternalLink } from "react-icons/fi";
 
+import { BiLogoDevTo } from "react-icons/bi";
+
 import { PortfolioData } from "./Portfolio.data";
 
 const settingsSlider = {
@@ -39,11 +41,18 @@ export default function Portfolio() {
             <div key={key} className={styles.ContentContainer}>
               <div className={styles.Content}>
                 <div className={styles.PortfolioImage}>
-                  <Image
-                    src={item.image}
-                    alt="Kanban"
-                    className={styles.Image}
-                  />
+                  {item.image != undefined ? (
+                    <Image
+                      src={item.image}
+                      alt="Kanban"
+                      className={styles.Image}
+                    />
+                  ) : (
+                    <div>
+                      <BiLogoDevTo />
+                      <p>In development</p>
+                    </div>
+                  )}
                 </div>
                 <div className={styles.Card}>
                   <div className={styles.CardText}>
