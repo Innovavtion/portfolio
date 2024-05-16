@@ -1,9 +1,7 @@
 import { StaticImageData } from "next/image";
 
-import KanbanImage from "@/public/Images/Kanban.png";
 import WeatherImage from "@/public/Images/Weather.png";
 import ToDoImage from "@/public/Images/ToDo.png";
-import PortfolioImage from "@/public/Images/Portfolio.png";
 
 import {
   SiJavascript,
@@ -37,21 +35,6 @@ interface portfolioProps {
 
 export const PortfolioData: Array<portfolioProps> = [
   {
-    text: "Portfolio",
-    description:
-      "Одностраничное приложение, описывающие проффесиональные навыки и умения разработчика.",
-    stack: [
-      { text: "TypeScript", icon: <SiTypescript /> },
-      { text: "Next", icon: <SiNextdotjs /> },
-      { text: "Sass", icon: <IoLogoSass /> },
-    ],
-    image: PortfolioImage,
-    link: {
-      github: "https://github.com/Innovavtion/portfolio",
-      vercel: "https://npminimalism.vercel.app/",
-    },
-  },
-  {
     text: "Weather",
     description:
       "Маленькое приложение для просмотра текущей погоды в нескольких городах.",
@@ -82,8 +65,9 @@ export const PortfolioData: Array<portfolioProps> = [
     },
   },
   {
-    text: "Chat-Fullstack",
-    description: "Проект для переписки двух или нескольких человек в группе.",
+    text: "Chat",
+    description:
+      "Fullstack проект для переписки двух или нескольких человек в группе.",
     stack: [
       { text: "TypeScript", icon: <SiTypescript /> },
       { text: "Nest", icon: <SiNestjs /> },
@@ -92,21 +76,6 @@ export const PortfolioData: Array<portfolioProps> = [
     image: undefined,
     link: {
       github: "https://github.com/Innovavtion/chat-fullstack",
-      vercel: undefined,
-    },
-  },
-  {
-    text: "Kanban",
-    description:
-      "Приложение для управления развитием проектов, который помогает наглядно представить объем задач и добиться максимальной эффективности разработки.",
-    stack: [
-      { text: "TypeScript", icon: <SiTypescript /> },
-      { text: "Next", icon: <SiNextdotjs /> },
-      { text: "Mui", icon: <SiMui /> },
-    ],
-    image: KanbanImage,
-    link: {
-      github: "https://github.com/Innovavtion/kanban-board",
       vercel: undefined,
     },
   },

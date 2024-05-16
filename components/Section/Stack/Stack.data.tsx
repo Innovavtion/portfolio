@@ -25,6 +25,7 @@ import {
   SiFigma,
   SiVercel,
   SiSwagger,
+  SiRadixui,
 } from "react-icons/si";
 
 import { IoLogoSass } from "react-icons/io";
@@ -48,9 +49,13 @@ export const StackData: Array<Stack> = [
       { text: "React", icon: <SiReact /> },
       { text: "Next", icon: <SiNextdotjs /> },
       { text: "Redux (Toolkit)", icon: <SiRedux /> },
+      { text: "Graphql", icon: <SiGraphql /> },
+      { text: "Webpack", icon: <SiWebpack /> },
+      { text: "Vite", icon: <SiVite /> },
       { text: "Sass", icon: <IoLogoSass /> },
       { text: "Tailwind", icon: <SiTailwindcss /> },
-      { text: "Mui", icon: <SiMui /> },
+      { text: "Material UI", icon: <SiMui /> },
+      { text: "Radix UI", icon: <SiRadixui /> },
     ],
   },
   {
@@ -65,32 +70,10 @@ export const StackData: Array<Stack> = [
   {
     text: "Environment",
     tools: [
-      { text: "Webpack", icon: <SiWebpack /> },
       { text: "Turbo", icon: <SiTurborepo /> },
       { text: "Eslint", icon: <SiEslint /> },
       { text: "Prettier", icon: <SiPrettier /> },
-      // { text: "Stylelint", icon: <SiStylelint /> },
+      { text: "Stylelint", icon: <SiStylelint /> },
     ],
   },
 ];
-
-/*
-{
-  text: "Testing",
-  tools: [
-    { text: "Jest", icon: <SiJest /> },
-    { text: "Testing Library", icon: <SiTestinglibrary /> },
-    { text: "Storybook", icon: <SiStorybook /> },
-    { text: "Postman", icon: <SiPostman /> },
-  ],
-},
-{
-  text: "Other",
-  tools: [
-    { text: "Graphql", icon: <SiGraphql /> },
-    { text: "Figma", icon: <SiFigma /> },
-    { text: "Vercel", icon: <SiVercel /> },
-  ],
-},
-
-*/
