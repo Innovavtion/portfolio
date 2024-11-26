@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 import WeatherImage from "@/public/Images/Weather.png";
 import ToDoImage from "@/public/Images/ToDo.png";
+import ChatImage from "@/public/Images/Chat.png";
 
 import {
   SiJavascript,
@@ -11,6 +12,8 @@ import {
   SiTailwindcss,
   SiMui,
   SiNestjs,
+  SiPostgresql,
+  SiPrisma,
 } from "react-icons/si";
 
 import { IoLogoSass } from "react-icons/io";
@@ -34,6 +37,21 @@ interface portfolioProps {
 }
 
 export const PortfolioData: Array<portfolioProps> = [
+  {
+    text: "Chat",
+    description:
+      "Fullstack проект, который позволяет переписываться двум людям в режиме реального времени.",
+    stack: [
+      { text: "TypeScript", icon: <SiTypescript /> },
+      { text: "React", icon: <SiReact /> },
+      { text: "Nest", icon: <SiNestjs /> },
+    ],
+    image: ChatImage,
+    link: {
+      github: "https://github.com/Innovavtion/chat-fullstack",
+      vercel: undefined,
+    },
+  },
   {
     text: "Weather",
     description:
@@ -62,21 +80,6 @@ export const PortfolioData: Array<portfolioProps> = [
     link: {
       github: "https://github.com/Innovavtion/to-do-react",
       vercel: "https://to-do-react-project.vercel.app",
-    },
-  },
-  {
-    text: "Chat",
-    description:
-      "Fullstack проект для переписки двух или нескольких человек в группе.",
-    stack: [
-      { text: "TypeScript", icon: <SiTypescript /> },
-      { text: "Nest", icon: <SiNestjs /> },
-      { text: "React", icon: <SiReact /> },
-    ],
-    image: undefined,
-    link: {
-      github: "https://github.com/Innovavtion/chat-fullstack",
-      vercel: undefined,
     },
   },
 ];
